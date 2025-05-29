@@ -1,0 +1,198 @@
+2025-05-29 20:38:24 [main] INFO  server.ServerMain - Инициализация базы данных...
+2025-05-29 20:38:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Starting...
+2025-05-29 20:38:24 [main] INFO  com.zaxxer.hikari.pool.HikariPool - LoyaltySystemPool - Added connection org.postgresql.jdbc.PgConnection@49dc7102
+2025-05-29 20:38:24 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Start completed.
+2025-05-29 20:38:24 [main] INFO  server.db.DatabaseConfig - HikariCP успешно инициализирована (URL=jdbc:postgresql://localhost:5432/loyalty_db)
+2025-05-29 20:38:24 [main] INFO  server.ServerMain - Запуск HTTP сервера на порту 8090...
+2025-05-29 20:38:24 [main] INFO  server.ServerMain - Сервер запущен. Порт: 8090
+2025-05-29 20:39:03 [nioEventLoopGroup-3-1] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:39:03 [nioEventLoopGroup-3-1] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:39:03 [nioEventLoopGroup-3-1] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:39:03 [nioEventLoopGroup-3-1] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/auth
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Обработка запроса на аутентификацию
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Запрос на аутентификацию пользователя: admin
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Всего пользователей в базе данных: 87
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=admin, role=ADMIN, id=1
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=manager, role=MANAGER, id=2
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=staff1, role=STAFF, id=3
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=staff2, role=STAFF, id=4
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=client1, role=CLIENT, id=5
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=client2, role=CLIENT, id=6
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=admin1, role=CLIENT, id=7
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=afsdas, role=CLIENT, id=8
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=sadfafsd, role=CLIENT, id=9
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=viktor_game, role=CLIENT, id=10
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=sadfщ, role=CLIENT, id=11
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=alex_gamer, role=CLIENT, id=12
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=maria_pro, role=CLIENT, id=13
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=dmitry_cs, role=CLIENT, id=14
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=elena_dota, role=CLIENT, id=15
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=sergey_lol, role=CLIENT, id=16
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=anna_wow, role=CLIENT, id=17
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=pavel_pubg, role=CLIENT, id=18
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=olga_sims, role=CLIENT, id=19
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=igor_minecraft, role=CLIENT, id=20
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=natasha_valorant, role=CLIENT, id=21
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=roman_fifa, role=CLIENT, id=22
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=svetlana_cyberpunk, role=CLIENT, id=23
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=andrey_gta, role=CLIENT, id=24
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=katya_overwatch, role=CLIENT, id=25
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=maxim_apex, role=CLIENT, id=26
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=julia_fortnite, role=CLIENT, id=27
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=denis_starcraft, role=CLIENT, id=28
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=irina_hearthstone, role=CLIENT, id=29
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=vladimir_warzone, role=CLIENT, id=30
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=alina_roblox, role=CLIENT, id=31
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=staff3, role=STAFF, id=32
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=staff4, role=STAFF, id=33
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=staff5, role=STAFF, id=34
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=manager2, role=MANAGER, id=35
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=manager3, role=MANAGER, id=36
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=fhgjhh, role=ADMIN, id=37
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=алина_valorant_1000, role=CLIENT, id=38
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=алексей_cs_1001, role=CLIENT, id=39
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=андрей_fortnite_1002, role=CLIENT, id=40
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=роман_wow_1004, role=CLIENT, id=42
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=екатерина_lol_1005, role=CLIENT, id=43
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=сергей_overwatch_1006, role=CLIENT, id=44
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=максим_cs_1007, role=CLIENT, id=45
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=андрей_valorant_1008, role=CLIENT, id=46
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=наталья_apex_1009, role=CLIENT, id=47
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=мария_lol_1010, role=CLIENT, id=48
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=владимир_overwatch_1011, role=CLIENT, id=49
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=татьяна_lol_1012, role=CLIENT, id=50
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=анна_minecraft_1013, role=CLIENT, id=51
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=максим_cs_1014, role=CLIENT, id=52
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=виктория_lol_1015, role=CLIENT, id=53
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=александр_fortnite_1016, role=CLIENT, id=54
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=алексей_wow_1017, role=CLIENT, id=55
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=игорь_fortnite_1018, role=CLIENT, id=56
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=ирина_lol_1019, role=CLIENT, id=57
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=мария_minecraft_1020, role=CLIENT, id=58
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=светлана_pubg_1021, role=CLIENT, id=59
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=роман_pubg_1022, role=CLIENT, id=60
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=анна_overwatch_1023, role=CLIENT, id=61
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=михаил_fortnite_1024, role=CLIENT, id=62
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=татьяна_overwatch_1025, role=CLIENT, id=63
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=наталья_minecraft_1026, role=CLIENT, id=64
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=ольга_lol_1027, role=CLIENT, id=65
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=александр_lol_1028, role=CLIENT, id=66
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=виктория_minecraft_1029, role=CLIENT, id=67
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=александр_cs_1030, role=CLIENT, id=68
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=роман_cs_1031, role=CLIENT, id=69
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=анна_apex_1032, role=CLIENT, id=70
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=андрей_cs_1033, role=CLIENT, id=71
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=сергей_wow_1034, role=CLIENT, id=72
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=елена_apex_1035, role=CLIENT, id=73
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=ирина_valorant_1036, role=CLIENT, id=74
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=наталья_dota_1037, role=CLIENT, id=75
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=наталья_minecraft_1038, role=CLIENT, id=76
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=анна_overwatch_1039, role=CLIENT, id=77
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=виктория_apex_1040, role=CLIENT, id=78
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=роман_pubg_1041, role=CLIENT, id=79
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=владимир_cs_1042, role=CLIENT, id=80
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=екатерина_pubg_1043, role=CLIENT, id=81
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=сергей_minecraft_1044, role=CLIENT, id=82
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=роман_pubg_1045, role=CLIENT, id=83
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=светлана_lol_1046, role=CLIENT, id=84
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=максим_lol_1047, role=CLIENT, id=85
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=светлана_cs_1048, role=CLIENT, id=86
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=екатерина_overwatch_1049, role=CLIENT, id=87
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Пользователь в БД: login=александр_dota_1003, role=CLIENT, id=41
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.db.dao.UserDaoImpl - Executing SQL for user lookup: SELECT u.id, u.login, u.password, u.role_id, r.name as role_name, u.full_name, u.email, u.phone, u.registration_date FROM users u JOIN roles r ON u.role_id = r.id WHERE LOWER(u.login) = LOWER(?)
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.db.dao.UserDaoImpl - User found: login=admin, id=1
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] INFO  server.service.UserServiceImpl - Пользователь успешно аутентифицирован: admin
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Sent success response
+2025-05-29 20:39:04 [nioEventLoopGroup-3-1] INFO  server.handler.AuthHandler - Пользователь admin успешно аутентифицирован
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/cards
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Processing request: GET /api/cards
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Handling request to get all cards
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.service.CardServiceImpl - Получение всех карт лояльности
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Retrieved 85 cards from database
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sending success response with 85 cards
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sent success response
+2025-05-29 20:39:04 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Successfully sent 85 cards to client
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/users
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/users
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Handling GET all users request
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Getting all users from service
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.service.UserServiceImpl - Получение всех пользователей
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Retrieved 87 users from database
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sending response with 87 users
+2025-05-29 20:39:09 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sent success response
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/cards
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.CardHandler - Processing request: POST /api/cards
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.CardHandler - Received request to create card with number 5353795361702519 for user 1
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Создание новой карты лояльности с номером 5353795361702519 для пользователя 1
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Карта с номером 5353795361702519 не найдена, можно создать
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Пользователь с id 1 найден: admin
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Ищем базовый уровень лояльности для 0 баллов
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Найдено 5 уровней лояльности
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Уровень: level=1, name=Бронза, minPoints=0
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Уровень: level=2, name=Серебро, minPoints=100
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Уровень: level=3, name=Золото, minPoints=500
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Уровень: level=4, name=Платина, minPoints=1000
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Уровень: level=5, name=Алмаз, minPoints=2000
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Базовый уровень лояльности найден: Бронза
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.service.CardServiceImpl - Сохраняем карту: номер=5353795361702519, пользователь=1, уровень=Бронза
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] INFO  server.service.CardServiceImpl - Создана новая карта лояльности: 5353795361702519
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.CardHandler - Card created successfully: 5353795361702519
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.CardHandler - Sent success response
+2025-05-29 20:39:52 [nioEventLoopGroup-3-4] DEBUG server.handler.CardHandler - Successfully sent created card response to client
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/promotions
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/promotions
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - Not a user API request: /api/promotions
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] DEBUG server.service.PromotionServiceImpl - Получение всех акций
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/promo-codes
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/promo-codes
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Not a user API request: /api/promo-codes
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.PromoCodeHandler - PromoCodeHandler processing: GET /api/promo-codes
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/promotions/statistics
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/promotions/statistics
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.PromoCodeHandler - Getting all promocodes
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - Not a user API request: /api/promotions/statistics
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.service.PromoCodeServiceImpl - Получение всех промокодов
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.handler.PromotionHandler - Запрос на получение статистики по акциям
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.service.PromotionServiceImpl - Получение статистики по акциям и промокодам
+2025-05-29 20:40:10 [nioEventLoopGroup-3-5] DEBUG server.handler.PromotionHandler - Запрос всех акций
+2025-05-29 20:40:10 [nioEventLoopGroup-3-6] DEBUG server.handler.PromoCodeHandler - Sent success response
+2025-05-29 20:40:10 [nioEventLoopGroup-3-7] DEBUG server.service.PromotionServiceImpl - Статистика по акциям успешно получена
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] INFO  server.service.SettingsServiceImpl - Проверка наличия обязательных настроек
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] INFO  server.service.SettingsServiceImpl - Проверка обязательных настроек завершена
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.UserHandler - Not a user API request: /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.PromoCodeHandler - PromoCodeHandler processing: GET /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.StatisticsHandler - StatisticsHandler processing: GET /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.ReportHandler - ReportHandler processing: GET /api/reports/points?from=2025-04-29&to=2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.ReportHandler - Generating points report from 2025-04-29 to 2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.service.ReportServiceImpl - Generating points report from 2025-04-29 to 2025-05-29
+2025-05-29 20:40:30 [nioEventLoopGroup-3-8] DEBUG server.handler.ReportHandler - Sent success response

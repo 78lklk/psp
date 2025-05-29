@@ -1,0 +1,99 @@
+@startuml ServerModule
+top to bottom direction
+skinparam classAttributeIconSize 0
+
+' Общие модели
+package Common.model {
+    class User
+    class Card
+    class Tier
+    class Promotion
+    class PromoCode
+    class AuditEvent
+}
+
+' Общие DTO
+package Common.dto {
+    class AuthRequest
+    class AuthResponse
+    class ApiResponse
+}
+
+' Конфигурация безопасности
+package Server.config {
+    class SecurityConfig {
+        + configureAuthentication(): void
+        + configureAuthorization(): void
+    }
+}
+
+' Сервисы
+package Server.service {
+    class UserService {
+        + createUser(User): User
+        + deleteUser(Long): void
+    }
+    class CardService {
+        + createCard(Card): Card
+        + findCard(Long): Card
+    }
+    class TierService {
+        + getTiers(): List<Tier>
+    }
+    class PromotionService {
+        + createPromotion(Promotion): Promotion
+    }
+    class PromoCodeService {
+        + validateCode(String): boolean
+    }
+    class SessionService {
+        + logSession(Session): void
+    }
+    class AuditService {
+        + record(AuditEvent): void
+    }
+}
+
+' Репозитории
+package Server.repository {
+    class UserRepository
+    class CardRepository
+    class PromotionRepository
+    class SessionRepository
+    class AuditRepository
+}
+
+' HTTP-обработчики
+package Server.handler {
+    class AuthHandler {
+        + login(AuthRequest): ApiResponse
+    }
+    class CardHandler {
+        + getCard(Long): ApiResponse
+    }
+    class UserHandler {
+        + listUsers(): ApiResponse
+    }
+    class PromotionHandler {
+        + listPromotions(): ApiResponse
+    }
+}
+
+' Взаимодействия
+AuthHandler --> UserService
+CardHandler --> CardService
+UserHandler --> UserService
+PromotionHandler --> PromotionService
+
+UserService --> UserRepository
+CardService --> CardRepository
+PromotionService --> PromotionRepository
+SessionService --> SessionRepository
+AuditService --> AuditRepository
+
+' Ассоциации
+User "1" o-- "*" AuditEvent
+Card "1" o-- "*" Session
+Promotion "1" *-- "*" PromoCode
+
+@enduml

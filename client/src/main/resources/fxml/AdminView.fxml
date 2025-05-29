@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="client.controller.AdminMainController"
+            stylesheets="@../css/admin.css"
+            prefWidth="1200" prefHeight="800">
+
+    <!-- Top panel: logo, title, welcome, theme and logout -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header-bar">
+            <padding><Insets top="10" right="20" bottom="10" left="20"/></padding>
+            <ImageView fitHeight="32" preserveRatio="true" styleClass="logo">
+                <image><Image url="@../images/logo.png"/></image>
+            </ImageView>
+            <Label text="GAME CLAN HUB - АДМИН ПАНЕЛЬ" styleClass="header-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <Label fx:id="lblWelcome" styleClass="header-user"/>
+
+            <Button fx:id="btnLogout" text="ВЫХОД" styleClass="header-exit"/>
+        </HBox>
+    </top>
+
+    <!-- Side panel with admin function buttons -->
+    <left>
+        <VBox spacing="15" styleClass="sidebar" prefWidth="240" VBox.vgrow="ALWAYS">
+            <padding><Insets top="20" right="15" bottom="20" left="15"/></padding>
+
+            <!-- System Health Check -->
+            <Button fx:id="btnHealth" onAction="#handleHealthCheck" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_health.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>СОСТОЯНИЕ СИСТЕМЫ</text>
+            </Button>
+
+            <!-- User Import -->
+            <Button fx:id="btnImportUsers" onAction="#handleImportUsers" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_import.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>ИМПОРТ ИГРОКОВ</text>
+            </Button>
+
+            <!-- Event Feed -->
+            <Button fx:id="btnEventsLog" onAction="#handleEventsLog" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_events.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>ЛЕНТА АКТИВНОСТИ</text>
+            </Button>
+
+            <!-- User Management -->
+            <Button fx:id="btnUserMgmt" onAction="#handleManageUsers" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_users.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>УПРАВЛЕНИЕ ИГРОКАМИ</text>
+            </Button>
+
+            <!-- Notification Templates -->
+            <Button fx:id="btnNotifTemplates" onAction="#handleNotifTemplates" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_templates.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>АКЦИИ И ПРОМО</text>
+            </Button>
+
+            <!-- Announcement Panel -->
+            <Button fx:id="btnAnnouncements" onAction="#handleAnnouncements" styleClass="sidebar-btn" wrapText="true">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image><Image url="@../images/icon_dashboard.png"/></image>
+                    </ImageView>
+                </graphic>
+                <text>ИГРОВЫЕ СОБЫТИЯ</text>
+            </Button>
+        </VBox>
+    </left>
+
+    <!-- Central area: metric cards -->
+    <center>
+        <VBox spacing="20" alignment="TOP_CENTER" styleClass="main-content">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+            
+            <Label text="ПАНЕЛЬ УПРАВЛЕНИЯ" styleClass="section-title"/>
+            
+            <HBox spacing="20" alignment="CENTER" styleClass="cards-container">
+                <VBox styleClass="card">
+                    <Label text="ОБЩЕЕ ЧИСЛО ИГРОКОВ" styleClass="card-title"/>
+                    <Label fx:id="lblAllStrategies" text="124" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="НОВЫХ ЗА 24 ЧАСА" styleClass="card-title"/>
+                    <Label fx:id="lblLast24h" text="12" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="АКТИВНЫЕ ПОЛЬЗОВАТЕЛИ" styleClass="card-title"/>
+                    <Label fx:id="lblActiveUsers" text="36" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="ВЫДАНО БОНУСОВ" styleClass="card-title"/>
+                    <Label fx:id="lblAvgKpi" text="5420" styleClass="card-value"/>
+                </VBox>
+            </HBox>
+            
+            <HBox spacing="20" alignment="CENTER" styleClass="cards-container">
+                <VBox styleClass="card">
+                    <Label text="КОМПЬЮТЕРЫ ОНЛАЙН" styleClass="card-title"/>
+                    <Label fx:id="lblOnlinePC" text="18/20" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="ТЕКУЩИЕ СЕССИИ" styleClass="card-title"/>
+                    <Label fx:id="lblCurrentSessions" text="14" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="СРЕДНИЙ РЕЙТИНГ" styleClass="card-title"/>
+                    <Label fx:id="lblAvgRating" text="4.8" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="ДЕЙСТВУЮЩИЕ АКЦИИ" styleClass="card-title"/>
+                    <Label fx:id="lblActivePromos" text="3" styleClass="card-value"/>
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

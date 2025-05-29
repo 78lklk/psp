@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<?import javafx.scene.image.Image?>
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="client.controller.AdminMainController"
+            stylesheets="@/css/admin.css">
+
+    <!-- Левый сайдбар -->
+    <left>
+        <VBox fx:id="sideBar" spacing="15" styleClass="sidebar">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <HBox spacing="8" alignment="CENTER_LEFT">
+
+                <!-- AdminMainView.fxml -->
+
+            </HBox>
+            <Separator/>
+            <Button fx:id="btnUsers" styleClass="side-btn">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image>
+                            <Image url="@/images/icon_users.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Пользователи</text>
+            </Button>
+
+            <Button fx:id="btnHealth" styleClass="side-btn">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image>
+                            <Image url="@/images/icon_health.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Health-check</text>
+            </Button>
+
+            <Button fx:id="btnImport" styleClass="side-btn">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image>
+                            <Image url="@/images/icon_import.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Импорт</text>
+            </Button>
+            <Button fx:id="btnEvents" styleClass="side-btn">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image>
+                            <Image url="@/images/icon_events.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>События</text>
+            </Button>
+            <Button fx:id="btnNotifications" styleClass="side-btn">
+                <graphic>
+                    <ImageView fitWidth="24" fitHeight="24">
+                        <image>
+                            <Image url="@/images/icon_notifications.png"/>
+                        </image>
+                    </ImageView>
+                </graphic>
+                <text>Уведомления</text>
+            </Button>
+        </VBox>
+    </left>
+
+    <!-- Верхняя панель -->
+    <top>
+            <HBox styleClass="topbar" alignment="CENTER_LEFT" spacing="10">
+                <padding>
+                    <Insets top="10" right="20" bottom="10" left="20"/>
+                </padding>
+
+                <ImageView fitWidth="32" preserveRatio="true">
+                    <image>
+                        <Image url="@/images/logo.png"/>
+                    </image>
+                </ImageView>
+                <Label text="Система стратегического планирования" styleClass="app-title"/>
+                <Label fx:id="lblWelcome" styleClass="welcome-label"/>
+                <Region HBox.hgrow="ALWAYS"/>
+
+
+                <ToggleButton fx:id="themeSwitcher" text="Тема" styleClass="theme-switch"/>
+                <Button fx:id="btnLogout" text="Выход" styleClass="logout-btn"/>
+            </HBox>
+    </top>
+
+    <!-- Центр: карточки + списки -->
+    <center>
+        <VBox spacing="20">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            <HBox spacing="20" alignment="CENTER">
+                <Region HBox.hgrow="ALWAYS"/>
+                <VBox styleClass="card">
+                    <Label text="Стратегий в работе"/>
+                    <Label fx:id="lblStrategies" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="Активных пользователей"/>
+                    <Label fx:id="lblActiveUsers" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="Авто-задач"/>
+                    <Label fx:id="lblAutoTasks" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="Вып. фаз (%)"/>
+                    <Label fx:id="lblPhaseCompletion" styleClass="card-value"/>
+                </VBox>
+                <VBox styleClass="card">
+                    <Label text="Пользователей онлайн"/>
+                    <Label fx:id="lblOnlineCount" styleClass="card-value"/>
+                </VBox>
+                <Region HBox.hgrow="ALWAYS"/>
+            </HBox>
+
+            <!-- Списки онлайн и бот -->
+            <HBox spacing="30" alignment="CENTER">
+                <VBox spacing="8" VBox.vgrow="ALWAYS">
+                    <Label text="Сейчас онлайн" styleClass="section-title"/>
+                    <ListView fx:id="onlineList" prefHeight="200"/>
+                </VBox>
+                <VBox spacing="8" VBox.vgrow="ALWAYS">
+                    <Label text="Админ-бот" styleClass="section-title"/>
+                    <TextArea fx:id="chatArea" prefHeight="160" editable="false" wrapText="true"/>
+                    <HBox spacing="8">
+                        <TextField fx:id="chatInput" HBox.hgrow="ALWAYS" promptText="Команда..."/>
+                        <Button fx:id="btnSend" text="Отправить"/>
+                    </HBox>
+                </VBox>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

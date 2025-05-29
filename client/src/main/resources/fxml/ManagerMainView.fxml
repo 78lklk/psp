@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Button?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" fx:controller="client.controller.ManagerMainViewController" prefWidth="800" prefHeight="600">
+    <children>
+        <Label layoutX="20" layoutY="20" text="Welcome, Manager!" style="-fx-font-size: 24px;" />
+        <Button layoutX="20" layoutY="80" text="Manage Strategies" onAction="#handleManageStrategies"/>
+        <Button layoutX="20" layoutY="130" text="KPI Dashboard" onAction="#handleKpiDashboard"/>
+        <Button layoutX="20" layoutY="180" text="Risk Analysis" onAction="#handleRiskAnalysis"/>
+        <!-- Дополнительные элементы, специфичные для менеджера -->
+    </children>
+</AnchorPane>

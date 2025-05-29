@@ -1,0 +1,10 @@
+<component name="libraryTable">
+  <library name="Gradle: org.jdbi:jdbi3-core:3.38.3" type="java-imported" external-system-id="GRADLE">
+    <properties groupId="org.jdbi" artifactId="jdbi3-core" version="3.38.3" />
+    <CLASSES>
+      <root url="jar://$USER_HOME$/.gradle/caches/modules-2/files-2.1/org.jdbi/jdbi3-core/3.38.3/a832380b73e4bee375fafabc44070b367f0ad88c/jdbi3-core-3.38.3.jar!/" />
+    </CLASSES>
+    <JAVADOC />
+    <SOURCES />
+  </library>
+</component>

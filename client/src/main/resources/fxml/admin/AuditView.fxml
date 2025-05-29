@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.ui.admin.AuditViewController"
+            stylesheets="@/css/styles.css">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    
+    <top>
+        <VBox spacing="10">
+            <Label text="Журнал аудита" styleClass="heading"/>
+            <Separator/>
+            
+            <GridPane hgap="10" vgap="10">
+                <padding>
+                    <Insets bottom="10" left="0" right="0" top="10"/>
+                </padding>
+                
+                <columnConstraints>
+                    <ColumnConstraints hgrow="NEVER" minWidth="100"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150"/>
+                    <ColumnConstraints hgrow="NEVER" minWidth="100"/>
+                    <ColumnConstraints hgrow="SOMETIMES" minWidth="150"/>
+                </columnConstraints>
+                
+                <!-- Период -->
+                <Label text="Период с:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                <DatePicker fx:id="fromDatePicker" GridPane.rowIndex="0" GridPane.columnIndex="1" 
+                            maxWidth="1.7976931348623157E308"/>
+                
+                <Label text="По:" GridPane.rowIndex="0" GridPane.columnIndex="2"/>
+                <DatePicker fx:id="toDatePicker" GridPane.rowIndex="0" GridPane.columnIndex="3" 
+                            maxWidth="1.7976931348623157E308"/>
+                
+                <!-- Фильтры -->
+                <Label text="Пользователь:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                <ComboBox fx:id="userFilterComboBox" GridPane.rowIndex="1" GridPane.columnIndex="1" 
+                          maxWidth="1.7976931348623157E308"/>
+                
+                <Label text="Действие:" GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                <ComboBox fx:id="actionTypeFilterComboBox" GridPane.rowIndex="1" GridPane.columnIndex="3" 
+                         maxWidth="1.7976931348623157E308"/>
+                
+                <!-- Кнопки фильтрации -->
+                <HBox spacing="10" GridPane.rowIndex="2" GridPane.columnIndex="0" GridPane.columnSpan="4" 
+                      alignment="CENTER_LEFT">
+                    <Button fx:id="applyFiltersButton" text="Применить фильтры" styleClass="button-primary"/>
+                    <Button fx:id="resetFiltersButton" text="Сбросить фильтры"/>
+                    <Region HBox.hgrow="ALWAYS"/>
+                    <Button fx:id="exportButton" text="Экспорт" styleClass="button-success"/>
+                </HBox>
+            </GridPane>
+        </VBox>
+    </top>
+    
+    <center>
+        <TableView fx:id="auditTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="60"/>
+                <TableColumn fx:id="userColumn" text="Пользователь" prefWidth="120"/>
+                <TableColumn fx:id="actionTypeColumn" text="Тип действия" prefWidth="150"/>
+                <TableColumn fx:id="actionDetailsColumn" text="Детали" prefWidth="300"/>
+                <TableColumn fx:id="timestampColumn" text="Дата и время" prefWidth="160"/>
+                <TableColumn fx:id="ipAddressColumn" text="IP-адрес" prefWidth="120"/>
+            </columns>
+        </TableView>
+    </center>
+    
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets top="10" right="0" bottom="0" left="0"/>
+            </padding>
+            <Label fx:id="statusLabel" styleClass="status-label"/>
+        </HBox>
+    </bottom>
+</BorderPane>

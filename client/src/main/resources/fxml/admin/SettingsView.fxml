@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.ui.admin.SettingsViewController"
+            stylesheets="@/css/styles.css">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    
+    <top>
+        <VBox spacing="10">
+            <Label text="Настройки системы" styleClass="heading"/>
+            <Separator/>
+        </VBox>
+    </top>
+    
+    <center>
+        <TabPane tabClosingPolicy="UNAVAILABLE">
+            <Tab text="Общие настройки">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets bottom="10" left="10" right="10" top="10"/>
+                    </padding>
+                    
+                    <GridPane hgap="10" vgap="10">
+                        <padding>
+                            <Insets bottom="10" left="10" right="10" top="10"/>
+                        </padding>
+                        
+                        <columnConstraints>
+                            <ColumnConstraints hgrow="NEVER" minWidth="150"/>
+                            <ColumnConstraints hgrow="ALWAYS" minWidth="200"/>
+                            <ColumnConstraints hgrow="NEVER"/>
+                        </columnConstraints>
+                        
+                        <!-- Тема -->
+                        <Label text="Тема приложения:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+                        <ComboBox fx:id="themeComboBox" GridPane.rowIndex="0" GridPane.columnIndex="1" 
+                                  maxWidth="1.7976931348623157E308"/>
+                        
+                        <!-- Директория для резервных копий -->
+                        <Label text="Директория для резервных копий:" GridPane.rowIndex="1" GridPane.columnIndex="0"/>
+                        <TextField fx:id="backupDirField" GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+                        <Button fx:id="browseBackupDirButton" text="Обзор..." GridPane.rowIndex="1" GridPane.columnIndex="2"/>
+                        
+                        <!-- Директория для отчетов -->
+                        <Label text="Директория для отчетов:" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+                        <TextField fx:id="reportsDirField" GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+                        <Button fx:id="browseReportsDirButton" text="Обзор..." GridPane.rowIndex="2" GridPane.columnIndex="2"/>
+                    </GridPane>
+                    
+                    <Button fx:id="saveChangesButton" text="Сохранить изменения" styleClass="button-primary"/>
+                    
+                    <Label fx:id="statusLabel" styleClass="status-label"/>
+                </VBox>
+            </Tab>
+            
+            <Tab text="Все настройки">
+                <VBox spacing="10">
+                    <padding>
+                        <Insets bottom="10" left="10" right="10" top="10"/>
+                    </padding>
+                    
+                    <HBox spacing="10" alignment="CENTER_LEFT">
+                        <Button fx:id="addSettingButton" text="Добавить" styleClass="button-success"/>
+                        <Button fx:id="editSettingButton" text="Редактировать" styleClass="button-primary"/>
+                        <Button fx:id="deleteSettingButton" text="Удалить" styleClass="button-danger"/>
+                    </HBox>
+                    
+                    <TableView fx:id="settingsTable" VBox.vgrow="ALWAYS">
+                        <columns>
+                            <TableColumn fx:id="keyColumn" text="Ключ" prefWidth="150"/>
+                            <TableColumn fx:id="valueColumn" text="Значение" prefWidth="200"/>
+                            <TableColumn fx:id="descriptionColumn" text="Описание" prefWidth="300"/>
+                            <TableColumn fx:id="lastUpdatedColumn" text="Последнее обновление" prefWidth="180"/>
+                        </columns>
+                    </TableView>
+                </VBox>
+            </Tab>
+        </TabPane>
+    </center>
+</BorderPane> 

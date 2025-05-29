@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Pos?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns:fx="http://javafx.com/fxml"
+            fx:controller="client.controller.UserManagementController"
+            stylesheets="@../css/admin.css"
+            prefWidth="1200" prefHeight="800">
+
+    <!-- Верхняя панель -->
+    <top>
+        <HBox alignment="CENTER_LEFT" spacing="10" styleClass="header-bar">
+            <padding><Insets top="10" right="20" bottom="10" left="20"/></padding>
+            <!-- Логотип -->
+            <ImageView fitHeight="32" preserveRatio="true" styleClass="logo">
+                <image>
+                    <Image url="@../images/logo.png"/>
+                </image>
+            </ImageView>
+            <!-- Заголовок системы -->
+            <Label text="Система стратегического планирования" styleClass="header-title"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <!-- Заголовок вкладки -->
+            <Label text="Управление пользователями" styleClass="header-subtitle"/>
+            <Region HBox.hgrow="ALWAYS"/>
+            <!-- Кнопки навигации -->
+            <Button fx:id="btnHome" text="Главная" styleClass="header-btn"/>
+            <Button fx:id="btnLogout" text="Выход" styleClass="header-exit"/>
+        </HBox>
+    </top>
+
+    <!-- Центр: таблица + панель кнопок -->
+    <center>
+        <VBox spacing="10" styleClass="main-content">
+            <padding><Insets top="20" right="20" bottom="20" left="20"/></padding>
+
+            <!-- Таблица пользователей -->
+            <TableView fx:id="tblUsers" VBox.vgrow="ALWAYS">
+                <columns>
+                    <TableColumn fx:id="colId"         text="ID"                    prefWidth="60"/>
+                    <TableColumn fx:id="colUsername"   text="Имя пользователя"      prefWidth="200"/>
+                    <TableColumn fx:id="colEmail"      text="Email"                 prefWidth="250"/>
+                    <TableColumn fx:id="colRole"       text="Роль"                  prefWidth="150"/>
+                    <TableColumn fx:id="colStatus"     text="Статус"                prefWidth="150"/>
+                </columns>
+            </TableView>
+
+            <!-- Панель кнопок CRUD -->
+            <HBox spacing="10" alignment="CENTER_RIGHT">
+                <Button fx:id="btnAdd" text="Добавить" graphicTextGap="5" styleClass="sidebar-btn">
+                    <graphic>
+                        <ImageView fitWidth="16" fitHeight="16">
+                            <image><Image url="@../images/icon_add.png"/></image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnEdit" text="Редактировать" graphicTextGap="5" styleClass="sidebar-btn">
+                    <graphic>
+                        <ImageView fitWidth="16" fitHeight="16">
+                            <image><Image url="@../images/icon_edit.png"/></image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnDelete" text="Удалить" graphicTextGap="5" styleClass="sidebar-btn">
+                    <graphic>
+                        <ImageView fitWidth="16" fitHeight="16">
+                            <image><Image url="@../images/icon_delete.png"/></image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+                <Button fx:id="btnToggleStatus" text="Блок/Разблок" graphicTextGap="5" styleClass="sidebar-btn">
+                    <graphic>
+                        <ImageView fitWidth="16" fitHeight="16">
+                            <image><Image url="@../images/icon_auto.png"/></image>
+                        </ImageView>
+                    </graphic>
+                </Button>
+            </HBox>
+        </VBox>
+    </center>
+</BorderPane>

@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<module external.linked.project.id=":client:test" external.linked.project.path="$MODULE_DIR$/../../../client" external.root.project.path="$MODULE_DIR$/../../.." external.system.id="GRADLE" external.system.module.group="org.example" external.system.module.type="sourceSet" external.system.module.version="1.0-SNAPSHOT" type="JAVA_MODULE" version="4">
+  <component name="NewModuleRootManager">
+    <output-test url="file://$MODULE_DIR$/../../../client/build/classes/java/test" />
+    <exclude-output />
+    <content url="file://$MODULE_DIR$/../../../client/src/test">
+      <sourceFolder url="file://$MODULE_DIR$/../../../client/src/test/java" isTestSource="true" />
+    </content>
+    <orderEntry type="inheritedJdk" />
+    <orderEntry type="sourceFolder" forTests="false" />
+    <orderEntry type="module" module-name="course.client.main" />
+    <orderEntry type="module" module-name="course.common.main" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-parameter-names:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.module:jackson-module-jaxb-annotations:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-core:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-annotations:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: com.fasterxml.jackson.core:jackson-databind:2.15.2" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-classic:1.4.11" level="project" />
+    <orderEntry type="library" name="Gradle: org.slf4j:slf4j-api:2.0.9" level="project" />
+    <orderEntry type="library" name="Gradle: org.apache.commons:commons-csv:1.10.0" level="project" />
+    <orderEntry type="library" name="Gradle: org.postgresql:postgresql:42.7.1" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-fxml:win:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-controls:win:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-graphics:win:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.openjfx:javafx-base:win:17" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.jupiter:junit-jupiter-api:5.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.xml.bind:jakarta.xml.bind-api:2.3.3" level="project" />
+    <orderEntry type="library" name="Gradle: jakarta.activation:jakarta.activation-api:1.2.2" level="project" />
+    <orderEntry type="library" name="Gradle: ch.qos.logback:logback-core:1.4.11" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:barcodes:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:font-asian:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:sign:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:forms:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:hyph:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:svg:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:styled-xml-parser:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:layout:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:pdfa:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:kernel:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:io:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.junit.platform:junit-platform-commons:1.9.3" level="project" />
+    <orderEntry type="library" name="Gradle: org.opentest4j:opentest4j:1.2.0" level="project" />
+    <orderEntry type="library" scope="PROVIDED" name="Gradle: org.apiguardian:apiguardian-api:1.1.2" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcpkix-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcprov-jdk15on:1.70" level="project" />
+    <orderEntry type="library" name="Gradle: com.itextpdf:commons:7.2.5" level="project" />
+    <orderEntry type="library" name="Gradle: org.bouncycastle:bcutil-jdk15on:1.70" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.jupiter:junit-jupiter-engine:5.9.3" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.checkerframework:checker-qual:3.41.0" level="project" />
+    <orderEntry type="library" scope="RUNTIME" name="Gradle: org.junit.platform:junit-platform-engine:1.9.3" level="project" />
+  </component>
+  <component name="TestModuleProperties" production-module="course.client.main" />
+</module>

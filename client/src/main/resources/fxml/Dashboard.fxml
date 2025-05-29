@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!-- Обязательно укажите импорт TableView, TableColumn, AnchorPane -->
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.controller.DashboardController"
+            prefWidth="600" prefHeight="400">
+
+    <!-- TableView с дочерним элементом columns -->
+    <TableView fx:id="tableView" layoutX="14.0" layoutY="14.0"
+               prefWidth="572.0" prefHeight="372.0">
+        <columns>
+            <TableColumn fx:id="colUserId" text="ID" prefWidth="50.0"/>
+            <TableColumn fx:id="colUsername" text="Username" prefWidth="120.0"/>
+            <TableColumn fx:id="colEmail" text="Email" prefWidth="200.0"/>
+            <TableColumn fx:id="colRole" text="Role" prefWidth="100.0"/>
+            <TableColumn fx:id="colStatus" text="Status" prefWidth="100.0"/>
+        </columns>
+    </TableView>
+</AnchorPane>

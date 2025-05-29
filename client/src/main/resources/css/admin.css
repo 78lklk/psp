@@ -1,0 +1,165 @@
+/* src/main/resources/css/admin.css */
+
+/* Admin panel with gaming/computer club theme */
+
+/* Main background */
+.root {
+    -fx-background-color: linear-gradient(to bottom, #121212, #1a1a1a);
+}
+
+/* HEADER */
+.header-bar {
+    -fx-background-color: rgba(0, 0, 0, 0.6);
+    -fx-border-color: rgba(0, 184, 212, 0.3);
+    -fx-border-width: 0 0 1 0;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 3);
+}
+
+.header-bar .logo {
+    -fx-effect: dropshadow(gaussian, rgba(0, 229, 255, 0.6), 10, 0, 0, 0);
+}
+
+.header-title {
+    -fx-text-fill: #00e5ff;
+    -fx-font-size: 20px;
+    -fx-font-weight: bold;
+}
+
+.header-user {
+    -fx-text-fill: white;
+    -fx-font-size: 16px;
+    -fx-padding: 0 10 0 10;
+}
+
+.header-theme {
+    -fx-background-color: rgba(0, 184, 212, 0.3);
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.header-theme:hover {
+    -fx-background-color: rgba(0, 229, 255, 0.5);
+}
+
+.header-exit {
+    -fx-background-color: #ff4d4d;
+    -fx-text-fill: white;
+    -fx-background-radius: 5;
+    -fx-cursor: hand;
+}
+
+.header-exit:hover {
+    -fx-background-color: #ff6666;
+}
+
+/* SIDEBAR */
+.sidebar {
+    -fx-background-color: rgba(20, 20, 20, 0.8);
+    -fx-border-color: rgba(0, 184, 212, 0.3);
+    -fx-border-width: 0 1 0 0;
+    -fx-pref-width: 240;
+}
+
+.sidebar-btn {
+    -fx-pref-width: 210;
+    -fx-background-color: transparent;
+    -fx-text-fill: #cccccc;
+    -fx-font-size: 14px;
+    -fx-alignment: CENTER_LEFT;
+    -fx-padding: 12 15;
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.sidebar-btn:hover {
+    -fx-background-color: rgba(0, 184, 212, 0.2);
+    -fx-text-fill: #00e5ff;
+}
+
+.sidebar-btn-active {
+    -fx-background-color: rgba(0, 184, 212, 0.3);
+    -fx-text-fill: white;
+}
+
+/* MAIN CONTENT */
+.main-content {
+    -fx-background-color: rgba(26, 26, 26, 0.7);
+    -fx-background-radius: 8;
+    -fx-padding: 20;
+}
+
+.section-title {
+    -fx-font-size: 18px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00e5ff;
+    -fx-padding: 0 0 15 0;
+}
+
+.cards-container {
+    -fx-spacing: 20;
+}
+
+/* CARDS */
+.card {
+    -fx-background-color: rgba(42, 42, 42, 0.8);
+    -fx-background-radius: 8;
+    -fx-padding: 20;
+    -fx-pref-width: 250;
+    -fx-pref-height: 150;
+    -fx-alignment: CENTER;
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.4), 8, 0, 0, 2);
+    -fx-border-color: rgba(0, 184, 212, 0.3);
+    -fx-border-radius: 8;
+    -fx-border-width: 1;
+}
+
+.card:hover {
+    -fx-effect: dropshadow(gaussian, rgba(0, 184, 212, 0.4), 15, 0, 0, 0);
+    -fx-border-color: rgba(0, 229, 255, 0.6);
+}
+
+.card-title {
+    -fx-font-size: 14px;
+    -fx-text-fill: #aaaaaa;
+    -fx-wrap-text: true;
+}
+
+.card-value {
+    -fx-font-size: 28px;
+    -fx-font-weight: bold;
+    -fx-text-fill: #00e5ff;
+}
+
+/* TABLES IN ADMIN PANEL */
+.admin-table {
+    -fx-background-color: rgba(42, 42, 42, 0.6);
+    -fx-border-color: rgba(0, 184, 212, 0.3);
+    -fx-border-radius: 5;
+    -fx-background-radius: 5;
+}
+
+.admin-table .column-header {
+    -fx-background-color: rgba(0, 0, 0, 0.4);
+    -fx-border-color: rgba(0, 184, 212, 0.3);
+}
+
+/* PANES */
+.tab-pane .tab {
+    -fx-background-color: rgba(26, 26, 26, 0.8);
+    -fx-focus-color: transparent;
+}
+
+.tab-pane .tab:selected {
+    -fx-background-color: #00b8d4;
+}
+
+.tab-pane .tab .tab-label {
+    -fx-text-fill: #cccccc;
+}
+
+.tab-pane .tab:selected .tab-label {
+    -fx-text-fill: white;
+}
+
+

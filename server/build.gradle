@@ -1,0 +1,61 @@
+plugins {
+    id 'java'
+    id 'application'
+}
+
+group 'org.example'
+version '1.0-SNAPSHOT'
+sourceCompatibility = '17'
+targetCompatibility = '17'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    implementation project(':common')
+    
+    // Основные зависимости
+    implementation 'org.postgresql:postgresql:42.7.1'
+    implementation 'org.slf4j:slf4j-api:1.7.36'
+    implementation 'ch.qos.logback:logback-classic:1.2.11'
+    
+    // Jackson для JSON
+    implementation 'com.fasterxml.jackson.core:jackson-databind:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-core:2.15.2'
+    implementation 'com.fasterxml.jackson.core:jackson-annotations:2.15.2'
+    implementation 'com.fasterxml.jackson.datatype:jackson-datatype-jsr310:2.15.2'
+    
+    // Netty для сетевого взаимодействия
+    implementation 'io.netty:netty-all:4.1.100.Final'
+    
+    // HikariCP для пула соединений
+    implementation 'com.zaxxer:HikariCP:5.0.1'
+    
+    // JDBI для работы с БД
+    implementation 'org.jdbi:jdbi3-core:3.38.3'
+    implementation 'org.jdbi:jdbi3-sqlobject:3.38.3'
+    
+    // iText для PDF
+    implementation 'com.itextpdf:itext7-core:7.2.5'
+    
+    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.9.2'
+    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.9.2'
+}
+
+application {
+    // Указываем основную точку входа серверного приложения
+    mainClass.set('server.ServerMain')
+}
+
+test {
+    useJUnitPlatform()
+}
+
+task generateData(type: JavaExec) {
+    description = 'Генерирует дополнительные тестовые данные для базы данных'
+    group = 'application'
+    mainClass = 'server.DataGeneratorMain'
+    classpath = sourceSets.main.runtimeClasspath
+    systemProperty 'java.awt.headless', 'true'
+}

@@ -1,0 +1,423 @@
+2025-05-19 01:43:21 [main] INFO  server.ServerMain - Инициализация базы данных...
+2025-05-19 01:43:21 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Starting...
+2025-05-19 01:43:22 [main] INFO  com.zaxxer.hikari.pool.HikariPool - LoyaltySystemPool - Added connection org.postgresql.jdbc.PgConnection@72cde7cc
+2025-05-19 01:43:22 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Start completed.
+2025-05-19 01:43:22 [main] INFO  server.db.DatabaseConfig - База данных успешно инициализирована
+2025-05-19 01:43:22 [main] INFO  server.ServerMain - Запуск HTTP сервера на порту 8090...
+2025-05-19 01:43:22 [main] INFO  server.ServerMain - Сервер запущен. Порт: 8090
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.service.PromotionServiceImpl - Инициализировано 6 акций
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.service.AuditServiceImpl - Инициализировано 100 записей аудита
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/auth
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Обработка запроса на аутентификацию
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Запрос на аутентификацию пользователя: admin
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.service.UserServiceImpl - Пользователь успешно аутентифицирован: admin
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Sent success response
+2025-05-19 01:44:54 [nioEventLoopGroup-3-1] INFO  server.handler.AuthHandler - Пользователь admin успешно аутентифицирован
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/cards
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Processing request: GET /api/cards
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Handling request to get all cards
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.service.CardServiceImpl - Получение всех карт лояльности
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Retrieved 22 cards from database
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sending success response with 22 cards
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sent success response
+2025-05-19 01:44:55 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Successfully sent 22 cards to client
+2025-05-19 02:04:41 [main] INFO  server.ServerMain - Инициализация базы данных...
+2025-05-19 02:04:41 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Starting...
+2025-05-19 02:04:42 [main] INFO  com.zaxxer.hikari.pool.HikariPool - LoyaltySystemPool - Added connection org.postgresql.jdbc.PgConnection@140c9f39
+2025-05-19 02:04:42 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Start completed.
+2025-05-19 02:04:42 [main] INFO  server.db.DatabaseConfig - База данных успешно инициализирована
+2025-05-19 02:04:43 [main] INFO  server.ServerMain - Запуск HTTP сервера на порту 8090...
+2025-05-19 02:04:43 [main] INFO  server.ServerMain - Сервер запущен. Порт: 8090
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] INFO  server.service.PromotionServiceImpl - Инициализировано 6 акций
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] INFO  server.service.AuditServiceImpl - Инициализировано 100 записей аудита
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/auth
+2025-05-19 02:04:50 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Обработка запроса на аутентификацию
+2025-05-19 02:04:51 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Запрос на аутентификацию пользователя: admin
+2025-05-19 02:04:51 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2025-05-19 02:04:51 [nioEventLoopGroup-3-1] INFO  server.service.UserServiceImpl - Пользователь успешно аутентифицирован: admin
+2025-05-19 02:04:51 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Sent success response
+2025-05-19 02:04:51 [nioEventLoopGroup-3-1] INFO  server.handler.AuthHandler - Пользователь admin успешно аутентифицирован
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/cards
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Processing request: GET /api/cards
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Handling request to get all cards
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.service.CardServiceImpl - Получение всех карт лояльности
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Retrieved 22 cards from database
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sending success response with 22 cards
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sent success response
+2025-05-19 02:04:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Successfully sent 22 cards to client
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/users
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/users
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/users
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Handling GET all users request
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Getting all users from service
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.service.UserServiceImpl - Получение всех пользователей
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Retrieved 7 users from database
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sending response with 7 users
+2025-05-19 02:04:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/users
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: POST /api/users
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - UserHandler processing request: POST /api/users
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Creating new user with login: werwerwe
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Setting fullName: wer wer
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.service.UserServiceImpl - Creating new user from complete user object: werwerwe
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] INFO  server.service.UserServiceImpl - Created new user: werwerwe
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - User created successfully with ID: 8
+2025-05-19 02:05:06 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/users
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: POST /api/users
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - UserHandler processing request: POST /api/users
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - Creating new user with login: wer
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - Setting fullName: wer wer
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.service.UserServiceImpl - Creating new user from complete user object: wer
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] INFO  server.service.UserServiceImpl - Created new user: wer
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - User created successfully with ID: 9
+2025-05-19 02:05:26 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.HttpServerHandler - Получен запрос: PUT /api/users/4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: PUT /api/users/4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users/4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - UserHandler processing request: PUT /api/users/4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Updating user with ID: 4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Setting fullName: Анна Сидорова
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.service.UserServiceImpl - Обновление пользователя: 4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] ERROR server.db.dao.UserDaoImpl - Error updating user: 4
+org.postgresql.util.PSQLException: ERROR: null value in column "password" of relation "users" violates not-null constraint
+  Detail: Failing row contains (4, staff33, null, null, 3, Анна Сидорова, staff2@club.com, , 2025-05-18 07:51:09.329323).
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2712)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2400)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:367)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at server.db.dao.UserDaoImpl.update(UserDaoImpl.java:206)
+	at server.db.dao.UserDaoImpl.update(UserDaoImpl.java:17)
+	at server.service.UserServiceImpl.updateUser(UserServiceImpl.java:153)
+	at server.handler.UserHandler.handleUpdateUser(UserHandler.java:252)
+	at server.handler.UserHandler.handle(UserHandler.java:87)
+	at server.handler.HttpServerHandler.channelRead0(HttpServerHandler.java:44)
+	at server.handler.HttpServerHandler.channelRead0(HttpServerHandler.java:16)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] ERROR server.service.UserServiceImpl - Не удалось обновить пользователя: staff33
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] ERROR server.handler.UserHandler - Failed to update user with ID: 4
+2025-05-19 02:05:51 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Sent error response: 500 Internal Server Error, Failed to update user
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.HttpServerHandler - Получен запрос: DELETE /api/users/5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: DELETE /api/users/5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users/5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - UserHandler processing request: DELETE /api/users/5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - Handling delete user request for userId: 5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.service.UserServiceImpl - Получение пользователя по id: 5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.service.UserServiceImpl - Удаление пользователя с id: 5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] ERROR server.db.dao.UserDaoImpl - Error deleting user: 5
+org.postgresql.util.PSQLException: ERROR: update or delete on table "users" violates foreign key constraint "cards_user_id_fkey" on table "cards"
+  Detail: Key (id)=(5) is still referenced from table "cards".
+	at org.postgresql.core.v3.QueryExecutorImpl.receiveErrorResponse(QueryExecutorImpl.java:2712)
+	at org.postgresql.core.v3.QueryExecutorImpl.processResults(QueryExecutorImpl.java:2400)
+	at org.postgresql.core.v3.QueryExecutorImpl.execute(QueryExecutorImpl.java:367)
+	at org.postgresql.jdbc.PgStatement.executeInternal(PgStatement.java:498)
+	at org.postgresql.jdbc.PgStatement.execute(PgStatement.java:415)
+	at org.postgresql.jdbc.PgPreparedStatement.executeWithFlags(PgPreparedStatement.java:190)
+	at org.postgresql.jdbc.PgPreparedStatement.executeUpdate(PgPreparedStatement.java:152)
+	at com.zaxxer.hikari.pool.ProxyPreparedStatement.executeUpdate(ProxyPreparedStatement.java:61)
+	at com.zaxxer.hikari.pool.HikariProxyPreparedStatement.executeUpdate(HikariProxyPreparedStatement.java)
+	at server.db.dao.UserDaoImpl.deleteById(UserDaoImpl.java:226)
+	at server.db.dao.UserDaoImpl.deleteById(UserDaoImpl.java:17)
+	at server.service.UserServiceImpl.deleteUser(UserServiceImpl.java:171)
+	at server.handler.UserHandler.handleDeleteUser(UserHandler.java:345)
+	at server.handler.UserHandler.handleDeleteUser(UserHandler.java:289)
+	at server.handler.UserHandler.handle(UserHandler.java:91)
+	at server.handler.HttpServerHandler.channelRead0(HttpServerHandler.java:44)
+	at server.handler.HttpServerHandler.channelRead0(HttpServerHandler.java:16)
+	at io.netty.channel.SimpleChannelInboundHandler.channelRead(SimpleChannelInboundHandler.java:99)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.codec.MessageToMessageDecoder.channelRead(MessageToMessageDecoder.java:103)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:444)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.CombinedChannelDuplexHandler$DelegatingChannelHandlerContext.fireChannelRead(CombinedChannelDuplexHandler.java:436)
+	at io.netty.handler.codec.ByteToMessageDecoder.fireChannelRead(ByteToMessageDecoder.java:346)
+	at io.netty.handler.codec.ByteToMessageDecoder.channelRead(ByteToMessageDecoder.java:318)
+	at io.netty.channel.CombinedChannelDuplexHandler.channelRead(CombinedChannelDuplexHandler.java:251)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.handler.timeout.IdleStateHandler.channelRead(IdleStateHandler.java:286)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:442)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.AbstractChannelHandlerContext.fireChannelRead(AbstractChannelHandlerContext.java:412)
+	at io.netty.channel.DefaultChannelPipeline$HeadContext.channelRead(DefaultChannelPipeline.java:1410)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:440)
+	at io.netty.channel.AbstractChannelHandlerContext.invokeChannelRead(AbstractChannelHandlerContext.java:420)
+	at io.netty.channel.DefaultChannelPipeline.fireChannelRead(DefaultChannelPipeline.java:919)
+	at io.netty.channel.nio.AbstractNioByteChannel$NioByteUnsafe.read(AbstractNioByteChannel.java:166)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKey(NioEventLoop.java:788)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeysOptimized(NioEventLoop.java:724)
+	at io.netty.channel.nio.NioEventLoop.processSelectedKeys(NioEventLoop.java:650)
+	at io.netty.channel.nio.NioEventLoop.run(NioEventLoop.java:562)
+	at io.netty.util.concurrent.SingleThreadEventExecutor$4.run(SingleThreadEventExecutor.java:997)
+	at io.netty.util.internal.ThreadExecutorMap$2.run(ThreadExecutorMap.java:74)
+	at io.netty.util.concurrent.FastThreadLocalRunnable.run(FastThreadLocalRunnable.java:30)
+	at java.base/java.lang.Thread.run(Thread.java:1583)
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] ERROR server.service.UserServiceImpl - Не удалось удалить пользователя: 5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] ERROR server.handler.UserHandler - Failed to delete user with ID 5
+2025-05-19 02:06:18 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - Sent error response: 500 Internal Server Error, {"success":false,"data":null,"errorMessage":"Не удалось удалить пользователя","errorCode":"ERROR"}
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:07:20 [nioEventLoopGroup-3-9] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:07:20 [nioEventLoopGroup-3-9] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/settings/BACKUP_DIR
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/settings/BACKUP_DIR
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] DEBUG server.service.SettingsServiceImpl - Запрос настройки по ключу: BACKUP_DIR
+2025-05-19 02:07:20 [nioEventLoopGroup-3-8] DEBUG server.handler.SettingsHandler - Sent success response
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.UserHandler - Not a user API request: /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] WARN  server.handler.HttpServerHandler - Не найден обработчик для запроса: GET /api/backup
+2025-05-19 02:07:21 [nioEventLoopGroup-3-9] DEBUG server.handler.AuthHandler - Sent error response: 404 Not Found, Ресурс не найден
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: POST /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.UserHandler - UserHandler processing request: POST /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.UserHandler - Not a user API request: /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] WARN  server.handler.HttpServerHandler - Не найден обработчик для запроса: POST /api/backup
+2025-05-19 02:07:24 [nioEventLoopGroup-3-10] DEBUG server.handler.AuthHandler - Sent error response: 404 Not Found, Ресурс не найден
+2025-05-19 23:21:34 [main] INFO  server.ServerMain - Инициализация базы данных...
+2025-05-19 23:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Starting...
+2025-05-19 23:21:34 [main] INFO  com.zaxxer.hikari.pool.HikariPool - LoyaltySystemPool - Added connection org.postgresql.jdbc.PgConnection@346d61be
+2025-05-19 23:21:34 [main] INFO  com.zaxxer.hikari.HikariDataSource - LoyaltySystemPool - Start completed.
+2025-05-19 23:21:34 [main] INFO  server.db.DatabaseConfig - База данных успешно инициализирована
+2025-05-19 23:21:35 [main] INFO  server.ServerMain - Запуск HTTP сервера на порту 8090...
+2025-05-19 23:21:35 [main] INFO  server.ServerMain - Сервер запущен. Порт: 8090
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.service.PromotionServiceImpl - Инициализировано 6 акций
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.service.AuditServiceImpl - Инициализировано 100 записей аудита
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.service.PromoCodeServiceImpl - Инициализировано 6 промокодов
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.service.BackupServiceImpl - Инициализировано 5 резервных копий
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/auth
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Обработка запроса на аутентификацию
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Запрос на аутентификацию пользователя: admin
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] DEBUG server.service.UserServiceImpl - Попытка аутентификации пользователя: admin
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.service.UserServiceImpl - Пользователь успешно аутентифицирован: admin
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] DEBUG server.handler.AuthHandler - Sent success response
+2025-05-19 23:21:50 [nioEventLoopGroup-3-1] INFO  server.handler.AuthHandler - Пользователь admin успешно аутентифицирован
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/cards
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Processing request: GET /api/cards
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Handling request to get all cards
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.service.CardServiceImpl - Получение всех карт лояльности
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Retrieved 22 cards from database
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sending success response with 22 cards
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Sent success response
+2025-05-19 23:21:51 [nioEventLoopGroup-3-2] DEBUG server.handler.CardHandler - Successfully sent 22 cards to client
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/users
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/users
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/users
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Handling GET all users request
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Getting all users from service
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.service.UserServiceImpl - Получение всех пользователей
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Retrieved 9 users from database
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sending response with 9 users
+2025-05-19 23:22:53 [nioEventLoopGroup-3-3] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/users
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/users
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/users
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Handling GET all users request
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Getting all users from service
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.service.UserServiceImpl - Получение всех пользователей
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Retrieved 9 users from database
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Sending response with 9 users
+2025-05-19 23:24:48 [nioEventLoopGroup-3-4] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/users
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/users
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/users
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/users
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Handling GET all users request
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Getting all users from service
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.service.UserServiceImpl - Получение всех пользователей
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Retrieved 9 users from database
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Sending response with 9 users
+2025-05-19 23:25:59 [nioEventLoopGroup-3-6] DEBUG server.handler.UserHandler - Sent success response
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:25:59 [nioEventLoopGroup-3-5] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:02 [nioEventLoopGroup-3-7] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:03 [nioEventLoopGroup-3-8] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:03 [nioEventLoopGroup-3-9] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:08 [nioEventLoopGroup-3-10] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:10 [nioEventLoopGroup-3-11] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.UserHandler - Not a user API request: /api/audit?from=2025-05-12T00:00:00&to=2025-05-19T23:59:59.999999999
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.service.AuditServiceImpl - Запрос всех записей аудита (100)
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.AuditHandler - Запрос всех записей аудита
+2025-05-19 23:26:11 [nioEventLoopGroup-3-12] DEBUG server.handler.AuditHandler - Sent success response
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/settings/BACKUP_DIR
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/settings/BACKUP_DIR
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] DEBUG server.service.SettingsServiceImpl - Запрос настройки по ключу: BACKUP_DIR
+2025-05-19 23:27:31 [nioEventLoopGroup-3-14] DEBUG server.handler.SettingsHandler - Sent success response
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.UserHandler - Not a user API request: /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.PromoCodeHandler - PromoCodeHandler processing: GET /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.BackupHandler - BackupHandler processing: GET /api/backup
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.BackupHandler - Getting all backups
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.service.BackupServiceImpl - Запрос всех резервных копий (5)
+2025-05-19 23:27:31 [nioEventLoopGroup-3-13] DEBUG server.handler.BackupHandler - Sent success response
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.HttpServerHandler - Получен запрос: POST /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: POST /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.UserHandler - UserHandler processing request: POST /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.UserHandler - Not a user API request: /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.PromoCodeHandler - PromoCodeHandler processing: POST /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.BackupHandler - BackupHandler processing: POST /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.BackupHandler - Creating new backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.service.UserServiceImpl - Получение пользователя по id: 1
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.service.BackupServiceImpl - Создание резервной копии пользователем: admin
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.service.AuditServiceImpl - Записано действие в аудит: AuditLog{id=101, user=admin, actionType='BACKUP', actionDetails='Создание резервной копии: backup_20250519_232735.sql', ipAddress='127.0.0.1', timestamp=2025-05-19T23:27:35.844379600, targetEntity='BACKUP', targetId=6}
+2025-05-19 23:27:35 [nioEventLoopGroup-3-15] DEBUG server.handler.BackupHandler - Sent success response
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] INFO  server.handler.SettingsHandler - SettingsHandler initialized
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] INFO  server.handler.UserHandler - UserHandler initialized
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.HttpServerHandler - Получен запрос: GET /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.SettingsHandler - SettingsHandler processing request: GET /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.SettingsHandler - Not a settings API request: /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.UserHandler - UserHandler processing request: GET /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.UserHandler - Not a user API request: /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.PromoCodeHandler - PromoCodeHandler processing: GET /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.BackupHandler - BackupHandler processing: GET /api/backup
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.BackupHandler - Getting all backups
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.service.BackupServiceImpl - Запрос всех резервных копий (6)
+2025-05-19 23:27:35 [nioEventLoopGroup-3-16] DEBUG server.handler.BackupHandler - Sent success response

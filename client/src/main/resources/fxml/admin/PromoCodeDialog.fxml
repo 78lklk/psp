@@ -1,0 +1,60 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<DialogPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            stylesheets="@/css/styles.css">
+    <content>
+        <GridPane hgap="10" vgap="10">
+            <padding>
+                <Insets top="20" right="20" bottom="20" left="20"/>
+            </padding>
+            
+            <columnConstraints>
+                <ColumnConstraints hgrow="NEVER" minWidth="130"/>
+                <ColumnConstraints hgrow="ALWAYS" minWidth="200"/>
+            </columnConstraints>
+            
+            <!-- Код -->
+            <Label text="Код:" GridPane.rowIndex="0" GridPane.columnIndex="0"/>
+            <TextField fx:id="codeField" promptText="Введите код промокода" 
+                     GridPane.rowIndex="0" GridPane.columnIndex="1"/>
+            
+            <!-- Описание -->
+            <Label text="Описание:" GridPane.rowIndex="1" GridPane.columnIndex="0" GridPane.valignment="TOP">
+                <GridPane.margin>
+                    <Insets top="5"/>
+                </GridPane.margin>
+            </Label>
+            <TextArea fx:id="descriptionArea" promptText="Введите описание промокода" prefRowCount="3"
+                    GridPane.rowIndex="1" GridPane.columnIndex="1"/>
+            
+            <!-- Бонусные баллы -->
+            <Label text="Бонус (баллы):" GridPane.rowIndex="2" GridPane.columnIndex="0"/>
+            <TextField fx:id="bonusPointsField" promptText="Введите количество бонусных баллов"
+                     GridPane.rowIndex="2" GridPane.columnIndex="1"/>
+            
+            <!-- Процент скидки -->
+            <Label text="Скидка (%):" GridPane.rowIndex="3" GridPane.columnIndex="0"/>
+            <TextField fx:id="discountPercentField" promptText="Введите процент скидки"
+                     GridPane.rowIndex="3" GridPane.columnIndex="1"/>
+            
+            <!-- Срок действия -->
+            <Label text="Срок действия:" GridPane.rowIndex="4" GridPane.columnIndex="0"/>
+            <DatePicker fx:id="expiryDatePicker" promptText="Выберите дату окончания"
+                      GridPane.rowIndex="4" GridPane.columnIndex="1" />
+            
+            <!-- Лимит использований -->
+            <Label text="Лимит использований:" GridPane.rowIndex="5" GridPane.columnIndex="0"/>
+            <TextField fx:id="usesLimitField" promptText="Введите максимальное количество использований"
+                     GridPane.rowIndex="5" GridPane.columnIndex="1"/>
+            
+            <!-- Активность -->
+            <Label text="Активен:" GridPane.rowIndex="6" GridPane.columnIndex="0"/>
+            <CheckBox fx:id="activeCheckBox" selected="true"
+                    GridPane.rowIndex="6" GridPane.columnIndex="1"/>
+        </GridPane>
+    </content>
+</DialogPane> 

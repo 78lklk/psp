@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<BorderPane xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1"
+            fx:controller="client.ui.admin.BackupViewController"
+            stylesheets="@/css/styles.css">
+    <padding>
+        <Insets bottom="10" left="10" right="10" top="10"/>
+    </padding>
+    
+    <top>
+        <VBox spacing="10">
+            <Label text="Управление резервными копиями" styleClass="heading"/>
+            <Separator/>
+            
+            <HBox spacing="10" alignment="CENTER_LEFT">
+                <Button fx:id="createBackupButton" text="Создать копию" styleClass="button-success"/>
+                <Button fx:id="restoreBackupButton" text="Восстановить" styleClass="button-primary"/>
+                <Button fx:id="downloadBackupButton" text="Скачать" styleClass="button-info"/>
+                <Button fx:id="deleteBackupButton" text="Удалить" styleClass="button-danger"/>
+            </HBox>
+        </VBox>
+    </top>
+    
+    <center>
+        <TableView fx:id="backupsTable" VBox.vgrow="ALWAYS">
+            <columns>
+                <TableColumn fx:id="idColumn" text="ID" prefWidth="60"/>
+                <TableColumn fx:id="fileNameColumn" text="Файл" prefWidth="200"/>
+                <TableColumn fx:id="fileSizeColumn" text="Размер" prefWidth="100"/>
+                <TableColumn fx:id="createdAtColumn" text="Дата создания" prefWidth="160"/>
+                <TableColumn fx:id="createdByColumn" text="Создатель" prefWidth="120"/>
+                <TableColumn fx:id="descriptionColumn" text="Описание" prefWidth="200"/>
+                <TableColumn fx:id="statusColumn" text="Статус" prefWidth="100"/>
+            </columns>
+        </TableView>
+    </center>
+    
+    <bottom>
+        <HBox alignment="CENTER_RIGHT" spacing="10">
+            <padding>
+                <Insets top="10" right="0" bottom="0" left="0"/>
+            </padding>
+            <Label fx:id="statusLabel" styleClass="status-label"/>
+        </HBox>
+    </bottom>
+</BorderPane> 

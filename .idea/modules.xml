@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/course.iml" filepath="$PROJECT_DIR$/course.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/course.client.iml" filepath="$PROJECT_DIR$/.idea/modules/client/course.client.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/course.client.main.iml" filepath="$PROJECT_DIR$/.idea/modules/client/course.client.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/client/course.client.test.iml" filepath="$PROJECT_DIR$/.idea/modules/client/course.client.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/course.common.iml" filepath="$PROJECT_DIR$/.idea/modules/common/course.common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/course.common.main.iml" filepath="$PROJECT_DIR$/.idea/modules/common/course.common.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/common/course.common.test.iml" filepath="$PROJECT_DIR$/.idea/modules/common/course.common.test.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/course.server.iml" filepath="$PROJECT_DIR$/.idea/modules/server/course.server.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/course.server.main.iml" filepath="$PROJECT_DIR$/.idea/modules/server/course.server.main.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/modules/server/course.server.test.iml" filepath="$PROJECT_DIR$/.idea/modules/server/course.server.test.iml" />
+    </modules>
+  </component>
+</project>

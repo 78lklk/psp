@@ -1,0 +1,1 @@
+2025-05-30 00:36:54 [LoyaltySystemPool housekeeper] WARN  com.zaxxer.hikari.pool.HikariPool - LoyaltySystemPool - Thread starvation or clock leap detected (housekeeper delta=2h6s388ms946µs601ns).

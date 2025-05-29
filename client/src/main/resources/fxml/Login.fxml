@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<VBox spacing="10" alignment="CENTER" xmlns:fx="http://javafx.com/fxml"
+      fx:controller="client.controller.LoginController"
+      stylesheets="@../css/style.css">
+    <Label text="Вход" styleClass="title"/>
+    <TextField fx:id="tfUsername" promptText="Логин" styleClass="field"/>
+    <PasswordField fx:id="pfPassword" promptText="Пароль" styleClass="field"/>
+    <HBox spacing="10" alignment="CENTER">
+        <Button fx:id="btnLogin" text="Войти"/>
+        <Button fx:id="btnCancel" text="Отмена"/>
+    </HBox>
+    <Label fx:id="lblStatus" textFill="red"/>
+</VBox>
